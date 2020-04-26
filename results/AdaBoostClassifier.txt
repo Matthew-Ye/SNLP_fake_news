@@ -1,0 +1,58 @@
+Reading dataset
+Total stances: 49972
+Total bodies: 1683
+Reading dataset
+Total stances: 25413
+Total bodies: 904
+Score for fold 6 was - 0.758259120942258
+Score for fold 0 was - 0.7756803138024025
+Score for fold 7 was - 0.7880073539810494
+Score for fold 5 was - 0.7621502209131075
+Score for fold 2 was - 0.8038674033149171
+Score for fold 8 was - 0.8101587301587302
+Score for fold 9 was - 0.7782584426458276
+Score for fold 3 was - 0.8070435838618271
+Score for fold 1 was - 0.7915910043302137
+Score for fold 4 was - 0.7879524967806553
+eval_report
+/anaconda3/lib/python3.6/site-packages/sklearn/metrics/classification.py:1143: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+              precision    recall  f1-score   support
+
+       agree       0.64      0.06      0.11       762
+    disagree       0.00      0.00      0.00       162
+     discuss       0.64      0.86      0.73      1800
+   unrelated       0.95      0.98      0.97      6898
+
+   micro avg       0.87      0.87      0.87      9622
+   macro avg       0.56      0.48      0.45      9622
+weighted avg       0.85      0.87      0.84      9622
+
+Scores on the dev set
+-------------------------------------------------------------
+|           |   agree   | disagree  |  discuss  | unrelated |
+-------------------------------------------------------------
+|   agree   |    46     |     0     |    625    |    91     |
+-------------------------------------------------------------
+| disagree  |     7     |     0     |    138    |    17     |
+-------------------------------------------------------------
+|  discuss  |    14     |     0     |   1549    |    237    |
+-------------------------------------------------------------
+| unrelated |     5     |     0     |    125    |   6768    |
+-------------------------------------------------------------
+Score: 3483.0 out of 4448.5	(78.29605484994943%)
+
+
+Scores on the test set
+-------------------------------------------------------------
+|           |   agree   | disagree  |  discuss  | unrelated |
+-------------------------------------------------------------
+|   agree   |    42     |     0     |   1568    |    293    |
+-------------------------------------------------------------
+| disagree  |     8     |     0     |    445    |    244    |
+-------------------------------------------------------------
+|  discuss  |    45     |     0     |   3682    |    737    |
+-------------------------------------------------------------
+| unrelated |     0     |     0     |    372    |   17977   |
+-------------------------------------------------------------
+Score: 8734.75 out of 11651.25	(74.96835103529664%)
