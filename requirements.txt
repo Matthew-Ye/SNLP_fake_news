@@ -3,3 +3,8 @@ sklearn
 numpy
 scipy
 nltk
+argparse
+lightgbm
+simpletransformers
+torch==1.5.0+cu101 
+torchvision==0.6.0+cu101
