@@ -84,28 +84,6 @@ def refuting_features(headlines, bodies):
         X.append(features)
     return X
 
-# def polarity_features_train(headlines, bodies, IDs):
-#     train = pd.read_csv('features/train_sentimentByTransformer_trainedOnMoviereview.csv')
-#     X = []
-#     for i, (headline, body, ID) in tqdm(enumerate(zip(headlines, bodies, IDs))):
-#         selected = train[(train['Body ID']==ID) & (train['Headline']==headline)]
-#         features = []
-#         features.append(int(list(selected['polarity_a'])[0]))
-#         features.append(int(list(selected['polarity_b'])[0]))
-#         X.append(features)
-#     return np.array(X)
-
-# def polarity_features_competition(headlines, bodies, IDs):
-#     test = pd.read_csv('features/test_sentimentByTransformer_trainedOnMoviereview.csv')
-#     X = []
-#     for i, (headline, body, ID) in tqdm(enumerate(zip(headlines, bodies, IDs))):
-#         selected = test[(test['Body ID']==ID) & (test['Headline']==headline)]
-#         features = []
-#         features.append(int(list(selected['polarity_a'])[0]))
-#         features.append(int(list(selected['polarity_b'])[0]))
-#         X.append(features)
-#     return np.array(X)
-
 def keywords_features_competition(headlines, bodies, IDs):
     test = pd.read_csv('features/competition_test_bodies_topics.csv')
     X = []

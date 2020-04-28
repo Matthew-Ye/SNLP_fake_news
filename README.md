@@ -10,8 +10,12 @@ For us, we fine tuned the RoBERTa model on a Linux machine with CUDA 10.1. We in
 
 Other dependencies can be checked in the file *requirements.txt*
 
+We use *key_word_extraction.ipynb* to extract the keywords features of the article bodies.
+
 The datasets are in the folder *fnc-1*.
 
 The report is in the folder *report_files*.
 
-This repository contains code that reads the dataset, extracts some simple features, trains a cross-validated model and performs an evaluation on a hold-out set of data. The results are also saved in the folder *results*.
+The results are also saved in the folder *results*.
+
+Note that all the features are extracted already and saved in the folder *features*. If you delete this folder and run the program *stance_detection.py*, it will extract the features again and save them in that folder.
