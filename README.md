@@ -6,7 +6,7 @@ Note that if you want fine tune the RoBERTa model with GPU. You need to check th
 
 For us, we fine tuned the RoBERTa model on a Linux machine with CUDA 10.1. We installed the pytorch with command:
                 
-                pip install torch==1.5.0+cu101 torchvision==0.6.0+cu101 -f https://download.pytorch.org/whl/torch_stable.html
+      pip install torch==1.5.0+cu101 torchvision==0.6.0+cu101 -f https://download.pytorch.org/whl/torch_stable.html
 
 Other dependencies can be checked in the file *requirements.txt*
 
